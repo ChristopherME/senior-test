@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Senior Test</string>
+    <string name="app_description">Desarrolle una aplicación para compartir lugares en común, la idea es que puedas registrarte e iniciar sesión en la app, compartir lugares que has conocido con otras personas, la app debe contar con un feed donde se pueden ver los lugares que otras personas han publicado.</string>
+    <string name="log_in">Iniciar Sesión</string>
+    <string name="sign_in">Registrarse</string>
+    <string name="processing_request">Procesando la consulta…</string>
+    <string name="error_general">Algo inesperado sucedió. Contacta a soporte: christopher.mike.96@gmail.com</string>
+    <string name="location_permissions">Necesitamos que nos concedas los permisos de locación para poder registrar los lugares donde has estado y con esa información mostrarte
+    quienes han estado en ese mismo lugar.</string>
+    <string name="notification_content_text">Se guardará tu locación cada 30 minutos. Si deseas parar el servicio, presiona aquí.</string>
+    <string name="title_saved_places">Mis lugares guardados</string>
+    <string name="no_saved_places">Aún no hay lugares guardados.</string>
+    <string name="upload_place_success">Tu lugar fue subido exitosamente.</string>
+    <string name="text_new_place">Nuevo lugar guardado, presiona para agregarlo.</string>
+    <string name="text_saved_on">Fecha: %s</string>
+    <string name="dialog_permissions_title">Antes de Empezar</string>
+    <string name="dialog_permissions_message">Para poder guardar tus lugares cada 30 minutos necesitamos que concedas los permisos de locación y ENCIENDAS tu GPS.</string>
+    <string name="dialog_accept">Acepto, activare mi GPS.</string>
+    <string name="dialog_decline">No gracias.</string>
+</resources>

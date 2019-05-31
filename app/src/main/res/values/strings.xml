@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Senior Test</string>
+    <string name="app_description">Develop an application to share common places, the idea is that you can register and log in to the app, share places you\'ve met with other people, the app should have a feed where you can see the places that other people have posted.</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_in">Sign In</string>
+    <string name="processing_request">Wait while your request is been processed…</string>
+    <string name="error_general">Something went wrong. Please contact support: christopher.mike.96@gmail.com</string>
+    <string name="location_permissions">We need you to grant us the location permits to register the places where you have a state and with that information show you
+        who have been in that same place.</string>
+    <string name="notification_content_text">Your location will be saved every 30 minutes. If you want to stop the service, click here.</string>
+    <string name="title_saved_places">My Saved Places</string>
+    <string name="no_saved_places">You still haven\'t save a place.</string>
+    <string name="upload_place_success">Success!</string>
+    <string name="text_new_place">New saved place</string>
+    <string name="text_saved_on">Saved on: %s</string>
+    <string name="dialog_permissions_title">Before we start</string>
+    <string name="dialog_permissions_message">Your location will be saved every 30 minutes. So you have to granted the location permissions and ENABLE your GPS.</string>
+    <string name="dialog_accept">Accept, I will enable my gps.</string>
+    <string name="dialog_decline">No thanks</string>
+</resources>

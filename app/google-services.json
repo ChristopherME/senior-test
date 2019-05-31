@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "502406884631",
+    "firebase_url": "https://senior-test-c0686.firebaseio.com",
+    "project_id": "senior-test-c0686",
+    "storage_bucket": "senior-test-c0686.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502406884631:android:3048985b15784b53",
+        "android_client_info": {
+          "package_name": "com.peruapps.christopher_elias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502406884631-8hha2c0b1gmd1nms4javtkbeajm0k79i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACihJxOTITob0U2fWXj38PzxkJR3TUDKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502406884631-8hha2c0b1gmd1nms4javtkbeajm0k79i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

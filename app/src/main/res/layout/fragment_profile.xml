@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View" />
+        <variable name="profileViewModel"
+                  type="com.peruapps.christopher_elias.ui.fragments.profile.ProfileViewModel"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:src="@drawable/ic_arrow_back_ios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="@{() -> profileViewModel.navigator.dismissView()}"/>
+            <TextView
+                    android:id="@+id/tv_app_name"
+                    android:text="@string/title_saved_places"
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+        </RelativeLayout>
+
+        <ProgressBar
+                android:theme="@style/AppTheme.ProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="@{safeUnbox(profileViewModel.isRefreshing) ? View.GONE : (safeUnbox(profileViewModel.isLoading) ? View.VISIBLE : View.GONE)}"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+        <TextView
+                android:text="@string/no_saved_places"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:gravity="center"
+                android:visibility="@{safeUnbox(profileViewModel.showEmptyView) ? View.VISIBLE : View.GONE}"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="@{safeUnbox(profileViewModel.showEmptyView) ? View.GONE : (safeUnbox(profileViewModel.isLoading) ? View.GONE : View.VISIBLE)}"
+                tools:listitem="@layout/item_place_room"
+                app:savedPlacesAdapter="@{profileViewModel.adapter}"/>
+
+    </LinearLayout>
+</layout>
